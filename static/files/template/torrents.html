@@ -20,25 +20,7 @@
     <div class="ui text loader">Loading</div>
   </div>
 
-  <div class="ui stackable grid">
-    <div class="two column row">
-      <div class="info column">
-        <div class="name">
-          <span ng-show="!ready(t.Name+'.zip')">
-            {{ t.Name }}
-          </span>
-          <a ng-show="ready(t.Name+'.zip')"
-            ng-href="{{ ready(t.Name+'.zip').url }}">
-            {{ t.Name }}
-          </a>
-        </div>
-        <div class="hash">#{{ t.InfoHash }}</div>
-        <div class="ui blue progress" ng-class="{active: t.Percent > 0 && t.Percent < 100}">
-          <div class="bar" ng-style="{width: t.Percent + '%'}">
-            <div class="progress"></div>
-          </div>
-        </div>
-      </div>
+  
       <div class="controls column">
         <div>
           <div class="ui mini buttons">
